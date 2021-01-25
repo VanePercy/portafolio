@@ -1,1 +1,75 @@
-/* No CSS *//*# sourceMappingURL=estilos.css.map */
+/*Colores*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*Fondo https://codepen.io/edmundojr/pen/xOYJGw */
+body {
+  background: linear-gradient(90deg, #161122 21px, transparent 1%) center, linear-gradient(#161122 21px, transparent 1%) center, #a799cc;
+  background-size: 22px 22px;
+}
+
+.titulo {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2.9em;
+  text-transform: uppercase;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  color: white;
+}
+
+.contenedor {
+  background: #fff;
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 1.6em;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+.contenedor > .header,
+.contenedor > .contenido,
+.contenedor > .barra-lateral,
+.contenedor > .footer
+.contenedor > div {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #000000;
+}
+
+.contenedor .header,
+.contenedor .footer {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+  background: #1e272e;
+  color: #ffffff;
+}
+
+.contenedor > .contenido {
+  grid-column: span 3;
+}
+
+.contenedor > .articulo {
+  background: #808e9b;
+  padding: 20px;
+  margin-top: 5px;
+  color: #dfe6e9;
+}
+
+.contenedor .articulo h1,
+.contenedor .articulo p {
+  padding: 10px;
+}
+
+.contenedor > .barra-lateral {
+  grid-column: span 2;
+  background: #485460;
+  color: #ffffff;
+}
+/*# sourceMappingURL=estilos.css.map */

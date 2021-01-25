@@ -1,0 +1,50 @@
+.contenedor {
+    background: #fff;
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.contenedor > .header,
+.contenedor > .contenido,
+.contenedor > .barra-lateral,
+.contenedor > .footer
+.contenedor > div {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #000000;
+
+}
+
+.contenedor .header,
+.contenedor .footer {
+    grid-column: 1/6;
+    background: #1e272e;
+    color: #ffffff;
+}
+
+.contenedor > .contenido {
+    grid-column: span 3;
+}
+
+.contenedor > .articulo {
+    background:  #808e9b;
+    padding: 20px;
+    margin-top: 5px;
+    color: #dfe6e9;
+}
+
+.contenedor .articulo h1,
+.contenedor .articulo p {
+    padding: 10px;
+}
+
+.contenedor > .barra-lateral {
+
+    grid-column: span 2;
+    background: #485460;
+    color: #ffffff;
+}
