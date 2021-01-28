@@ -10,11 +10,28 @@ body {
   background-size: 22px 22px;
 }
 
+/*Responsive*/
+@media screen and (max-width: 768px) {
+  .titulo {
+    font-size: 1em;
+  }
+  .contenedor .contenido {
+    grid-column: 1/-1;
+  }
+  .contenedor .barra-lateral {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1/6;
+  }
+  .contenedor .footer {
+    grid-column: 1/-1;
+  }
+}
+
 .titulo {
-  padding: 20px 0;
   text-align: center;
+  padding: 20px 0;
   font-size: 2.9em;
-  text-transform: uppercase;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
   color: white;
@@ -35,8 +52,7 @@ body {
 .contenedor > .header,
 .contenedor > .contenido,
 .contenedor > .barra-lateral,
-.contenedor > .footer
-.contenedor > div {
+.contenedor > .footer .contenedor > div {
   background: #fff;
   padding: 20px;
   border: 1px solid #000000;
@@ -53,18 +69,25 @@ body {
 
 .contenedor > .contenido {
   grid-column: span 3;
+  margin: 1em;
 }
 
-.contenedor > .articulo {
-  background: #808e9b;
+.contenido > article {
   padding: 20px;
   margin-top: 5px;
-  color: #dfe6e9;
+  margin-bottom: 5px;
 }
 
-.contenedor .articulo h1,
-.contenedor .articulo p {
-  padding: 10px;
+.contenido h1 {
+  padding: 3px;
+  margin-bottom: 5px;
+  font-size: 36px;
+  text-align: center;
+}
+
+.contenido p {
+  font-size: 20px;
+  font-style: italic;
 }
 
 .contenedor > .barra-lateral {

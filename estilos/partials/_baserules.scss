@@ -11,3 +11,24 @@ body {
 		$dot-color;
 	background-size: $dot-space $dot-space;
 }
+
+
+/*Responsive*/
+@media screen and (max-width: 768px) {
+	.titulo {
+		
+		font-size: 1em;
+	}
+
+	.contenedor .contenido {
+		grid-column: 1/-1;
+	}
+
+	.contenedor .barra-lateral {
+		grid-column: 1/6;
+	}
+
+	.contenedor .footer {
+		grid-column: 1/-1;
+	}
+}
